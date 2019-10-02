@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import polinema.ac.id.starterchapter05.activities.StaticActivity;
+import polinema.ac.id.starterchapter05.activities.DynamicActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,9 +22,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void ClickDynamicFragment(View view) {
-    }
+
 
     public void ClickPraktikumFragment(View view) {
+
+    }
+
+    public void ClickDynamicFragment(View view) {
+        Intent intent = new Intent( this, DynamicActivity.class );
+        startActivity(intent);
     }
 }
